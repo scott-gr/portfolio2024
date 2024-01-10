@@ -1,0 +1,157 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta name="generator" content="Primo" />
+      <!-- HEAD_svelte-1kzow2m_START --><meta name="viewport" content="width=device-width, initial-scale=1.0"><style>@import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Sarabun&display=swap');
+
+#page {
+  font-family: 'Calistoga', serif;
+  color: var(--color);
+  line-height: 1.6; 
+  font-size: 1.2rem;
+  background: #dc6044;
+}
+
+.section-container {
+  max-width: var(--max-width, 1200px);
+  margin: 0 auto;
+  padding: 3rem var(--padding, 1rem); 
+}
+
+h1.heading {
+  font-size: 3.5rem;
+  line-height: 1;
+  font-weight: 700;
+  margin: 0;
+}
+h2.heading {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  margin: 0;
+}
+
+.button {
+  color: white;
+  background: var(--color-accent);
+  border-radius: 5px;
+  padding: 8px 20px;
+  transition: var(--transition);
+}
+
+.button:hover {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  }
+
+.button.inverted {
+    background: transparent; 
+    color: var(--color-accent); 
+    border: 2px solid var(--color-accent);
+  }
+</style><!-- HEAD_svelte-1kzow2m_END -->
+      <style>.section-container.svelte-1u3fx20.svelte-1u3fx20{display:flex;justify-content:space-between;align-items:center;padding-top:1rem;padding-bottom:1rem}.desktop-nav.svelte-1u3fx20.svelte-1u3fx20{display:none;align-items:center;justify-content:right;width:100%}.desktop-nav.svelte-1u3fx20 nav.svelte-1u3fx20{display:flex;gap:2rem}.desktop-nav.svelte-1u3fx20 nav a.link.svelte-1u3fx20{border-color:transparent;transition:border-color 0.1s;font-size:0.95rem}.desktop-nav.svelte-1u3fx20 nav a.link.svelte-1u3fx20:hover{border-color:initial}@media(min-width: 800px){.desktop-nav.svelte-1u3fx20.svelte-1u3fx20{display:flex
+}}.mobile-nav.svelte-1u3fx20.svelte-1u3fx20{display:flex;align-items:center;justify-content:space-between;width:100%;font-weight:500}@media(min-width: 800px){.mobile-nav.svelte-1u3fx20.svelte-1u3fx20{display:none
+}}#popup.svelte-1u3fx20.svelte-1u3fx20{font-size:1.25rem;display:grid;gap:1rem;position:absolute;text-align:center;background-color:var(--background-color, white);box-shadow:var(--box-shadow, 0px 4px 30px rgba(0, 0, 0, 0.1));border-radius:var(--border-radius);inset:0.5rem;bottom:initial;padding:2rem;z-index:1}#popup.svelte-1u3fx20 button#close.svelte-1u3fx20{position:absolute;right:1rem;top:1rem}
+.section-container.svelte-xf413m{padding:5rem 2rem 3rem 2rem}@media(min-width: 900px){.section-container.svelte-xf413m{padding:10rem 2rem 5rem 2rem
+}}.headline.svelte-xf413m{color:#151515;font-size:clamp(5rem, 10vw, 5.5rem);font-weight:500;margin-bottom:1rem;padding-top:12rem;max-width:1200px}.subheadline.svelte-xf413m{color:#151515;font-size:clamp(2.5rem, 8vw, 2.5rem);font-weight:500;margin-bottom:1rem;max-width:1200px}
+section.svelte-1g0dryk.svelte-1g0dryk{background:#92bacf}section.section-container.svelte-1g0dryk.svelte-1g0dryk{display:grid;background:#92bacf;place-items:center;max-width:var(--inner-max-width, 900px);padding-bottom:3rem}.heading.svelte-1g0dryk.svelte-1g0dryk{text-align:center;text-wrap:balance;margin-bottom:3rem;color:#151515}figure.svelte-1g0dryk.svelte-1g0dryk{display:grid;gap:0.25rem;margin-bottom:2.5rem}figure.svelte-1g0dryk img.svelte-1g0dryk{width:150px;height:150px;-o-object-fit:cover;object-fit:cover;border-radius:100%}figure.svelte-1g0dryk figcaption.svelte-1g0dryk{color:var(--color-shade, #151515);font-size:0.875rem;font-weight:400;text-align:center}.content.svelte-1g0dryk.svelte-1g0dryk{line-height:1.5;font-family:'Sarabun', sans-serif;color:#151515}.content.svelte-1g0dryk p{margin-bottom:1rem}
+h1.heading.svelte-t3gcb.svelte-t3gcb{text-align:center;text-wrap:balance;margin-bottom:3rem;font-weight:500}section.svelte-t3gcb.svelte-t3gcb{background:#151515;color:var(--color-white,white)}.teasers.svelte-t3gcb.svelte-t3gcb{display:grid;gap:6rem}.teaser.svelte-t3gcb.svelte-t3gcb{display:grid;gap:1rem}.teaser.svelte-t3gcb img.svelte-t3gcb{width:100%;border-radius:var(--border-radius)}.teaser.svelte-t3gcb .content-section.svelte-t3gcb{display:grid;place-items:flex-start;padding:0}.teaser.svelte-t3gcb .content-section .heading.svelte-t3gcb{margin-bottom:1.25rem;margin-left:0;color:var(--color-white, white);font-family:'Sarabun', sans-serif}.teaser.svelte-t3gcb .content-section .body.svelte-t3gcb{margin-bottom:2rem;font-family:'Sarabun', sans-serif}.teaser.svelte-t3gcb .content-section a.button.svelte-t3gcb{background-color:transparent;border:1.5px solid white;font-family:'Sarabun', sans-serif}.teaser.svelte-t3gcb .content-section a.button.svelte-t3gcb:hover{box-shadow:0 0 0 2px white}@media(min-width: 800px){.teaser.svelte-t3gcb.svelte-t3gcb{grid-template-columns:1fr 1fr;place-items:center;gap:4rem
+
+    /* switch direction for even items */
+}.teaser.svelte-t3gcb:nth-child(odd) img.svelte-t3gcb{grid-row:1;grid-column:2}.teaser.svelte-t3gcb:nth-child(even) img.svelte-t3gcb{grid-row:1;grid-column:1}}@media(min-width: 1200px){section.svelte-t3gcb.svelte-t3gcb{gap:6rem}.teaser.svelte-t3gcb.svelte-t3gcb{gap:10rem}.heading.svelte-t3gcb.svelte-t3gcb{margin-bottom:5rem}.body.svelte-t3gcb.svelte-t3gcb{margin-bottom:2.5rem}}
+section.svelte-1gu85c0.svelte-1gu85c0.svelte-1gu85c0{color:#151515}.card.svelte-1gu85c0.svelte-1gu85c0.svelte-1gu85c0{display:grid;grid-template-columns:1fr 1fr}ul.svelte-1gu85c0 li.svelte-1gu85c0+li.svelte-1gu85c0{-webkit-margin-before:1rem;margin-block-start:1rem}a.svelte-1gu85c0.svelte-1gu85c0.svelte-1gu85c0{display:flex;flex-flow:row nowrap;align-items:center;gap:1rem}</style>
+    </head>
+    <body id="page">
+       
+<div class="section" id="section-ba652273"><header class="section-container svelte-1u3fx20"><div class="desktop-nav svelte-1u3fx20"><nav class="svelte-1u3fx20"><a class="link svelte-1u3fx20" href="mailto:mscottgriffin@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="2rem" height="2rem" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="m20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/><!-- HTML_TAG_END --></svg>
+        </a><a class="link svelte-1u3fx20" href="https://www.linkedin.com/in/scottgriffinatl/"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="2rem" height="2rem" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"/><!-- HTML_TAG_END --></svg>
+        </a><a class="link svelte-1u3fx20" href="https://github.com/scott-gr"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="2rem" height="2rem" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/><!-- HTML_TAG_END --></svg>
+        </a></nav></div>
+  <div class="mobile-nav svelte-1u3fx20"><button id="open" aria-label="Open mobile navigation"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="30" height="30" viewBox="0 0 24 24" class="iconify iconify--eva"><!-- HTML_TAG_START --><rect width="18" height="2" x="3" y="11" fill="currentColor" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="16" fill="currentColor" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="6" fill="currentColor" rx=".95" ry=".95"/><!-- HTML_TAG_END --></svg></button>
+    </div></header></div> 
+<div class="section" id="section-3f61734a"><section class="section-container svelte-xf413m"><h1 class="headline svelte-xf413m">Scott Griffin</h1>
+<h2 class="subheadline svelte-xf413m">A software developer based in Atlanta, GA</h2></section></div> 
+<div class="section" id="section-29cc7c1b"><section id="about" class="svelte-1g0dryk"><section class="section-container svelte-1g0dryk"><h1 class="heading svelte-1g0dryk">About Me</h1>
+  <figure class="svelte-1g0dryk"><img src="https://mnnnknicjahhtzxuaqky.supabase.co/storage/v1/object/public/images/1e7c6f0b-4f88-41d7-8dd3-df36d2ec9598/1689875129180scott-headshot.JPG" alt="" class="svelte-1g0dryk">
+    <figcaption class="svelte-1g0dryk"></figcaption></figure>
+  <div class="content svelte-1g0dryk"><!-- HTML_TAG_START --><p>I am a Software Engineer with experience in React.js, JavaScript/TypeScript, Svelte, Node.js, Python, and more. My background is in marketing and project management for international events. In my career I've worked with diverse teams to solve problems and create innovative solutions.</p>
+<p>My work is full stack, but Front End is my passion. I build responsive, accessible applications, with an emphasis on mobile design and performance.</p>
+<p>Outside of work, I live with my family in Atlanta's Kirkwood neighborhood. When I have spare time, I enjoy: trying new restaurants, DIY, and gaming with friends.</p><!-- HTML_TAG_END --></div></section></section></div> 
+<div class="section" id="section-9eba71d8"><section id="projects" class="svelte-t3gcb"><div class="section-container svelte-t3gcb"><h1 class="heading svelte-t3gcb">Projects</h1>
+    <div class="teasers svelte-t3gcb"><div class="teaser svelte-t3gcb"><img src="https://mnnnknicjahhtzxuaqky.supabase.co/storage/v1/object/public/images/1e7c6f0b-4f88-41d7-8dd3-df36d2ec9598/1690486856240statlink_thumbnail.png" alt="" class="svelte-t3gcb">
+          <div class="content-section svelte-t3gcb"><h2 class="heading svelte-t3gcb">Statlink.io</h2>
+            <div class="body svelte-t3gcb"><!-- HTML_TAG_START --><p>Team sports analytics app for coaches and players. Built with React, TypeScript, and Python backend.</p><!-- HTML_TAG_END --></div>
+            <div class="links"><a class="button svelte-t3gcb" href="https://www.dsa-labs.com/">DSA Labs
+              </a>
+            <a class="button svelte-t3gcb" href="https://www.statlink.io/">Application
+              </a>
+            </div></div>
+        </div><div class="teaser svelte-t3gcb"><img src="https://mnnnknicjahhtzxuaqky.supabase.co/storage/v1/object/public/images/1e7c6f0b-4f88-41d7-8dd3-df36d2ec9598/1689875129179oakhurstdogpark.png" alt="" class="svelte-t3gcb">
+          <div class="content-section svelte-t3gcb"><h2 class="heading svelte-t3gcb">Oakhurst Dog Park</h2>
+            <div class="body svelte-t3gcb"><!-- HTML_TAG_START --><p>A website made for a community dog park, where leaders can blog and post announcements. Gatsby.js/React site using Netlify CMS for user publishing and GraphQL metadata and image queries.</p><!-- HTML_TAG_END --></div>
+            <div class="links"><a class="button svelte-t3gcb" href="https://oakhurstdogpark.com/">View
+              </a>
+            <a class="button svelte-t3gcb" href="https://github.com/scott-gr/oakhurst-dog-park">GitHub
+              </a>
+            </div></div>
+        </div><div class="teaser svelte-t3gcb"><img src="https://mnnnknicjahhtzxuaqky.supabase.co/storage/v1/object/public/images/1e7c6f0b-4f88-41d7-8dd3-df36d2ec9598/1704822218317Web%20capture_9-1-2024_124338_raidmaps.gg.jpeg" alt="" class="svelte-t3gcb">
+          <div class="content-section svelte-t3gcb"><h2 class="heading svelte-t3gcb">RaidMaps.gg</h2>
+            <div class="body svelte-t3gcb"><!-- HTML_TAG_START --><p>Visual guides for "Raid" encounters in the video game Destiny 2. Built in Next.js / React with a focus on simplicity and colorblind-accessibility. </p>
+<p>Maps created in PenPot.io (open source Figma-like SaaS).  </p>
+<p>Work in Progress!</p><!-- HTML_TAG_END --></div>
+            <div class="links"><a class="button svelte-t3gcb" href="https://raidmaps.gg">View
+              </a>
+            
+            </div></div>
+        </div><div class="teaser svelte-t3gcb"><img src="https://mnnnknicjahhtzxuaqky.supabase.co/storage/v1/object/public/images/1e7c6f0b-4f88-41d7-8dd3-df36d2ec9598/1704818768052Web%20capture_9-1-2024_114047_rpgtoken.tools.jpeg" alt="" class="svelte-t3gcb">
+          <div class="content-section svelte-t3gcb"><h2 class="heading svelte-t3gcb">rpgToken.tools</h2>
+            <div class="body svelte-t3gcb"><!-- HTML_TAG_START --><p>This react web app lets users upload an image and edit it into a character "token" to use in virtual tabletop games. </p>
+<p>Utilizes HTML Canvas with stateful React Hooks and Components.</p><!-- HTML_TAG_END --></div>
+            <div class="links"><a class="button svelte-t3gcb" href="https://rpgtoken.tools">View
+              </a>
+            <a class="button svelte-t3gcb" href="https://github.com/scott-gr/rpg-token-tools">GitHub
+              </a>
+            </div></div>
+        </div></div></div></section></div> 
+<div class="section" id="section-36192e41"><section id="contact" class="svelte-1gu85c0"><section class="section-container svelte-1gu85c0"><div class="card svelte-1gu85c0"><h1 class="heading">Get in touch</h1>
+    <ul class="svelte-1gu85c0"><li class="svelte-1gu85c0"><a href="mailto:mscottgriffin@gmail.com" aria-label="Email" class="svelte-1gu85c0"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="2rem" height="2rem" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="m20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/><!-- HTML_TAG_END --></svg>  
+          mscottgriffin@gmail.com</a>
+
+      </li><li class="svelte-1gu85c0"><a href="https://www.linkedin.com/in/scottgriffinatl/" aria-label="LinkedIn" class="svelte-1gu85c0"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="2rem" height="2rem" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"/><!-- HTML_TAG_END --></svg>  
+          linkedin.com/in/scottgriffinatl</a>
+
+      </li><li class="svelte-1gu85c0"><a href="https://github.com/scott-gr" aria-label="GitHub" class="svelte-1gu85c0"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="2rem" height="2rem" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/><!-- HTML_TAG_END --></svg>  
+          github.com/scott-gr</a>
+
+      </li></ul></div></section></section></div> 
+
+      <script type="module">
+      import('/_symbols/44078405-3797-40e2-8135-78d80b746fe8.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-36192e41'),
+              hydrate: true,
+              props: {"heading":"Get in touch","social":[{"icon":"mdi:email","link":{"url":"mailto:mscottgriffin@gmail.com","label":"Email","active":false},"display":"mscottgriffin@gmail.com"},{"icon":"mdi:linkedin","link":{"url":"https://www.linkedin.com/in/scottgriffinatl/","label":"LinkedIn","active":false},"display":"linkedin.com/in/scottgriffinatl"},{"icon":"mdi:github","link":{"url":"https://github.com/scott-gr","label":"GitHub","active":false},"display":"github.com/scott-gr"}]}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    
+
+      import('/_symbols/6a362fc8-dcd0-40b5-b6b0-ede14746627b.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-ba652273'),
+              hydrate: true,
+              props: {"site_nav":[{"icon":"mdi:email","link":{"url":"mailto:mscottgriffin@gmail.com","label":"email","active":false}},{"icon":"mdi:linkedin","link":{"url":"https://www.linkedin.com/in/scottgriffinatl/","label":"LinkedIn","active":false}},{"icon":"mdi:github","link":{"url":"https://github.com/scott-gr","label":"github","active":false}}]}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    </script>
+    </body>
+  </html>
+  
