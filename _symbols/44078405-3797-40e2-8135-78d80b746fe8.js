@@ -2864,8 +2864,8 @@ function create_each_block(ctx) {
 		h() {
 			attr(a, "href", a_href_value = /*link*/ ctx[4].url);
 			attr(a, "aria-label", a_aria_label_value = /*link*/ ctx[4].label);
-			attr(a, "class", "svelte-1gu85c0");
-			attr(li, "class", "svelte-1gu85c0");
+			attr(a, "class", "svelte-1vi333i");
+			attr(li, "class", "svelte-1vi333i");
 		},
 		m(target, anchor) {
 			insert_hydration(target, li, anchor);
@@ -2969,11 +2969,11 @@ function create_fragment(ctx) {
 		},
 		h() {
 			attr(h1, "class", "heading");
-			attr(ul, "class", "svelte-1gu85c0");
-			attr(div, "class", "card svelte-1gu85c0");
-			attr(section0, "class", "section-container svelte-1gu85c0");
+			attr(ul, "class", "svelte-1vi333i");
+			attr(div, "class", "card svelte-1vi333i");
+			attr(section0, "class", "section-container svelte-1vi333i");
 			attr(section1, "id", "contact");
-			attr(section1, "class", "svelte-1gu85c0");
+			attr(section1, "class", "svelte-1vi333i");
 		},
 		m(target, anchor) {
 			insert_hydration(target, section1, anchor);
